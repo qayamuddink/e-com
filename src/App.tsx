@@ -5,6 +5,9 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 
 import Sidebar from './components/Sidebar'
 import MainContent from './components/MainContent'
+import ProductPage from './components/ProductPage'
+import TopSellar from './components/TopSellers'
+import PopularBlogs from './components/PopularBlogs'
 
 function App() {
 
