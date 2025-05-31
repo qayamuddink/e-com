@@ -80,18 +80,18 @@ const Sidebar =() => {
     }
 
     return(
-        <div className="w-64 p-5 h-screen">
+        <div className="w-64  p-5 h-screen">
             <h1  className="text-2xl font-bold mb-10 mt-4"> React Store </h1>
             <section>
-                <input type="text" className="border-2 rounded px-2 sm:mb:-0 " placeholder="Search Product"
+                <input type="text" className="border-2 border-gray-200 rounded px-5 py-2 w-full sm:mb-0" placeholder="Search Product"
                  value={searchQuery} onChange={(e) => setSearchQuery(e.target.value) }
                  />
-                <div className="flex justify-center items-center">
-                    <input type="text" className="border-2 mr-2 px-5 mb-3 w-full"
+                <div className="flex justify-center mt-3 items-center">
+                    <input type="text" className="border-2 border-gray-200 mr-2 px-5 py-3 mb-3 w-full"
                     placeholder="Min"
                     value={minPrice} onChange={handleMinPriceChange}
                     />
-                    <input type="text" className="border-2 mr-2 px-5 mb-3 w-full"
+                    <input type="text" className="border-2 border-gray-200 mr-2 px-5 py-3 mb-3 w-full"
                     placeholder="Max"
                     value={maxPrice ?? ""} onChange={handleMaxPrice}
                     />
