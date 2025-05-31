@@ -21,7 +21,12 @@ function App() {
             <div className="rounded w-full flex justify-between flex-wrap">
               <Routes>
                 <Route path="/" element={<MainContent/>} />
+                <Route  path = "/product/:id" element={<ProductPage />} />
               </Routes>
+              <div>
+                <TopSellar />
+                <PopularBlogs />
+              </div>
             </div>
           </div>
         </Router>
